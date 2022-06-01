@@ -18,7 +18,12 @@ function login() {
             "content-type": "application/json"
         },
         body : JSON.stringify(req),
+    })
+    .then((res)=> res.json())
+    .then((res)=> {
+
     });
 }
+
 
 console.log(id);
