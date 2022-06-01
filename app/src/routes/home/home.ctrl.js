@@ -19,12 +19,13 @@ const process = {
     login : (req, res)=>{
         const user = new User(req.body);
         const response = user.login();
-        console.log(response);
         return res.json(response);
         
         
-        response.success = false;
-        response.msg = "로그인에 실패하였습니다."
+    },
+    register : (req, res)=>{
+        const user = new User(req.body);
+        const response = user.register();
         return res.json(response);
     },
 }; 
