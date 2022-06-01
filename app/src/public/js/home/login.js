@@ -12,7 +12,13 @@ function login() {
         password : password.value
     };
 
-    console.log(req);
+    fetch("/login", {
+        method : "POST",
+        headers : {
+            "content-type": "application/json"
+        },
+        body : JSON.stringify(req),
+    });
 }
 
 console.log(id);

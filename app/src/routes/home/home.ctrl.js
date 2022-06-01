@@ -1,14 +1,15 @@
 "use strict";
 
-const hello = (req, res)=> {
-    res.render("home/index");
-};
+const output={
+    hello = (req, res)=> {
+        res.render("home/index");
+    },
 
-const login = (req, res)=>{
-    res.render("home/login");
-};
+    login = (req, res)=>{
+        res.render("home/login");
+    },
+}
 
 module.exports = {
-    hello,
-    login
+    output,
 };
